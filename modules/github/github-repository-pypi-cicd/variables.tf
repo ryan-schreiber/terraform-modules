@@ -12,7 +12,7 @@ variable "project_name" {
   type        = string
   description = "The name of your project, restricted to only [A-Za-z0-9_]"
   validation {
-    condition     = length(var.project_name) > 0 && can(regex("^[A-Za-z0-9_]$", var.project_name))
+    condition     = length(var.project_name) > 0 
     error_message = "The project_name value cannot be an empty string, and restricted to only [A-Za-z0-9_] characters."
   }
 }
