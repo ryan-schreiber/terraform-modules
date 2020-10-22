@@ -3,8 +3,8 @@ variable "git_token" {
   type    = string
   description = "The personal Git token for the owner of this repository."
   validation {
-    condition     = length(var.git_token) == 20
-    error_message = "Please provide a valid git token, length 20 characters."
+    condition     = length(var.git_token) == 40
+    error_message = "Please provide a valid git token, length 40 characters."
   }
 }
 
